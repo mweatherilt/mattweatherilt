@@ -28,6 +28,18 @@
     <meta name="twitter:image" content="/og.png" />
 
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Exclusive"
+      href="/exclusives/rss.xml"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Digest"
+      href="/digests/rss.xml"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -36,6 +48,8 @@
     <header class="top">
       <div class="mark">MW</div>
       <nav>
+        <a href="/digests/">Digest</a>
+        <a href="/exclusives/">Exclusive</a>
         <a href="https://x.com/nftmatt" rel="me">X</a>
         <a href="https://www.linkedin.com/in/mattweatherilt">LinkedIn</a>
         <a href="#contact">Contact</a>
@@ -67,6 +81,80 @@
           <a class="btn" href="https://www.linkedin.com/in/mattweatherilt">LinkedIn</a>
           <a class="btn" href="https://x.com/nftmatt">X</a>
         </div>
+      </section>
+
+      <!-- webby:hero — latest PUBLIC Exclusive only; skip members: true -->
+      <section class="webby-block" id="exclusive-hero" aria-labelledby="exclusive-hero-heading">
+        <p class="kicker">Latest Exclusive</p>
+        <h2 id="exclusive-hero-heading">No public Exclusive yet</h2>
+        <p class="about">
+          Longer pieces from public YouTube long-form will land here.
+          Members-only drafts stay off this hero, the listing, sitemap, and RSS
+          until the video is public.
+        </p>
+        <p class="about">
+          Prefer the daily pulse?
+          <a href="/digests/">Read the Digest →</a>
+        </p>
+      </section>
+
+      <section class="webby-block" id="newsletter" aria-labelledby="newsletter-heading">
+        <p class="kicker">Newsletter</p>
+        <h2 id="newsletter-heading">Exclusive the same day it ships. Digest the next morning.</h2>
+        <p class="about">
+          Exclusive mail the same day a public piece ships. Digest mail the
+          next morning after that day’s social pulse. Email if you want on the
+          list — there is no fake signup log here.
+        </p>
+        <form
+          id="subscribe"
+          class="subscribe"
+          action="mailto:matt@radix-it-consulting.com?subject=Newsletter"
+          method="get"
+        >
+          <label class="sr-only" for="subscribe-email">Email</label>
+          <input
+            id="subscribe-email"
+            type="email"
+            name="body"
+            required
+            autocomplete="email"
+            placeholder="Email"
+          />
+          <button class="btn primary" type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <!-- webby:signal — latest daily Digest; not YouTube transcripts -->
+      <section class="webby-block" id="signal" aria-labelledby="signal-heading">
+        <p class="kicker">This week’s signal</p>
+        <h2 id="signal-heading">No Digest yet</h2>
+        <p class="about">
+          Daily catch-ups from posts, likes, and reposts will show here. Not
+          YouTube transcripts.
+        </p>
+      </section>
+
+      <section class="webby-block" id="digest-listing" aria-labelledby="digest-listing-heading">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Digest</p>
+            <h2 id="digest-listing-heading">What I posted, liked, and reposted.</h2>
+          </div>
+          <a class="btn" href="/digests/">All digests</a>
+        </div>
+        <p class="empty-ledger">Nothing in the Digest list yet.</p>
+      </section>
+
+      <section class="webby-block" id="exclusive-listing" aria-labelledby="exclusive-listing-heading">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Exclusive</p>
+            <h2 id="exclusive-listing-heading">Longer pieces from the videos.</h2>
+          </div>
+          <a class="btn" href="/exclusives/">All exclusives</a>
+        </div>
+        <p class="empty-ledger">Nothing in the Exclusive list yet. Public pieces only — members-only drafts stay off this list until the video is public.</p>
       </section>
 
       <section class="experience">
@@ -136,7 +224,11 @@
 
     <footer>
       <span>© 2026 Matt Weatherilt</span>
-      <span>mattweatherilt.com</span>
+      <span>
+        <a href="/digests/rss.xml">Digest RSS</a>
+        ·
+        <a href="/exclusives/rss.xml">Exclusive RSS</a>
+      </span>
     </footer>
   </body>
 </html>

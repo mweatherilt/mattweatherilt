@@ -69,10 +69,18 @@ footer {
   letter-spacing: 0.14em;
   border: 1px solid var(--line);
   padding: 6px 8px;
+  color: var(--ink);
+}
+
+a.mark:hover {
+  text-decoration: none;
+  border-color: var(--accent);
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 18px;
   font-size: 14px;
 }
@@ -172,8 +180,73 @@ article {
 
 .experience,
 .skills,
-.contact {
+.contact,
+.webby-block {
   padding-bottom: 48px;
+}
+
+.webby-block h2 {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0 0 14px;
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.section-head h2 {
+  margin-bottom: 0;
+}
+
+.empty-ledger {
+  margin: 0;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.subscribe input {
+  min-height: 44px;
+  min-width: min(100%, 260px);
+  flex: 1;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+}
+
+.subscribe button {
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .experience h2,
