@@ -1,6 +1,6 @@
 # Matt Weatherilt
 
-IT Manager at Walker Ford. Owner of [Radix IT Consulting](https://mattweatherilt.com).
+IT Manager at Walker Ford. Owner of [Radix IT Consulting](https://radix-it-consulting.com).
 
 I spend most days on practical IT ops: monitoring, backups, cyber protection, and keeping networks and systems running. Cardano is a side interest.
 
