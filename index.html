@@ -77,7 +77,7 @@
           happening.
         </p>
         <div class="cta">
-          <a class="btn primary" href="mailto:matt@radix-it-consulting.com">Email</a>
+          <a class="btn primary js-mail" href="#contact">Email</a>
           <a class="btn" href="https://www.linkedin.com/in/mattweatherilt">LinkedIn</a>
           <a class="btn" href="https://x.com/nftmatt">X</a>
         </div>
@@ -106,12 +106,7 @@
           next morning after that day’s social pulse. Email if you want on the
           list — there is no fake signup log here.
         </p>
-        <form
-          id="subscribe"
-          class="subscribe"
-          action="mailto:matt@radix-it-consulting.com?subject=Newsletter"
-          method="get"
-        >
+        <form id="subscribe" class="subscribe" action="#subscribe" method="get">
           <label class="sr-only" for="subscribe-email">Email</label>
           <input
             id="subscribe-email"
@@ -216,9 +211,12 @@
         <h2>Contact</h2>
         <p>Email is best. LinkedIn and X work too.</p>
         <div class="cta">
-          <a class="btn primary" href="mailto:matt@radix-it-consulting.com">matt@radix-it-consulting.com</a>
+          <a class="btn primary js-mail" href="#contact">Email</a>
           <a class="btn" href="https://www.linkedin.com/in/mattweatherilt">LinkedIn</a>
         </div>
+        <noscript>
+          <p class="about">matt [at] radix-it-consulting [dot] com</p>
+        </noscript>
       </section>
     </main>
 
@@ -230,5 +228,6 @@
         <a href="/exclusives/rss.xml">Exclusive RSS</a>
       </span>
     </footer>
+    <script src="/mail.js" defer></script>
   </body>
 </html>
