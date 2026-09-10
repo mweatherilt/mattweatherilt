@@ -332,6 +332,10 @@ h3 {
   color: var(--paper);
 }
 
+.cta-band .kicker {
+  color: rgba(246, 244, 239, 0.72);
+}
+
 .cta-band h2,
 .cta-band p {
   color: var(--paper);
