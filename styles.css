@@ -171,13 +171,11 @@ article {
 }
 
 .experience,
-.skills,
 .contact {
   padding-bottom: 48px;
 }
 
 .experience h2,
-.skills h2,
 .contact h2 {
   font-family: var(--serif);
   font-size: 28px;
@@ -212,31 +210,15 @@ article {
   line-height: 1.55;
 }
 
-.experience ul,
-.certs {
+.experience ul {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
   line-height: 1.55;
 }
 
-.experience li + li,
-.certs li + li {
+.experience li + li {
   margin-top: 4px;
-}
-
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0 0 16px;
-}
-
-.chips span {
-  border: 1px solid var(--line);
-  padding: 6px 10px;
-  font-size: 13px;
-  color: #c9cfc6;
 }
 
 article h2,
